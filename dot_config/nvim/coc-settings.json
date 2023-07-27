@@ -1,0 +1,30 @@
+{
+  "suggest.enablePreselect": false,
+  "java.format.enabled": true,
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "java",
+    "json",
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "py",
+    "lua"
+  ],
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+  "coc.preferences.formatOnType": true,
+  "colors.highlightPriority": 1000,
+  "tailwindCSS.hovers": true,
+  "tailwindCSS.colorDecorators": true,
+  "hover.target": "preview",
+  "java.format.settings.url": "/Users/aritra/.config/coc/extensions/node_modules/redhat.java/eclipse-formatter.xml",
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "hover.autoHide": true,
+  "suggest.autoTrigger": "always"
+}

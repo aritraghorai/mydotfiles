@@ -1,0 +1,52 @@
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
+alias bi="brew install"
+alias bic="brew install --cask"
+alias bs="brew search"
+alias bup="brew upgrade"
+alias vim="nvim"
+alias vim="nvim"
+
+
+
+
+source ~/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Load the theme.
+antigen theme awesomepanda
+
+# Bundles from the default repo (robbyrussell's oh-my-zsh).
+antigen bundle git
+antigen bundle tmux
+
+#external package
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-autosuggestions
+
+
+antigen apply
+
+
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=red,bold"
+
+eval "$(starship init zsh)"
+
+
+
+eval "$(rbenv init - zsh)"
+
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+export ANDROID_HOME=/Users/aritra/Library/Android/sdk
+export ANDROID_SDK_ROOT=/Users/aritra/Library/Android/sdk
+export PATH="/opt/homebrew/opt/gradle@6/bin:$PATH"
+
+
+# Load Angular CLI autocompletion.
+source <(ng completion script)
+
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"
