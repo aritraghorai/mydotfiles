@@ -4,6 +4,5 @@ if not status_ok then return end
 color.setup{
    'css';
   'javascript';
-  'scss';
   'typescript';
 }

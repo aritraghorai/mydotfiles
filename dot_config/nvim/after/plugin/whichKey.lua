@@ -155,7 +155,9 @@ local mappings = {
     g = {
         name = "git",
         b = { "<cmd>Telescope git_branches<cr>", "Show All Git Branches" },
-        c = { "<cmd>Telescope git_commits<cr>", "Show All Git Commits" }
+        o = { "<cmd>Telescope git_commits<cr>", "Show All Git Commits" },
+        c = { "<cmd>:Git push -u origin HEAD<CR>", "Added a commit" },
+        p = { "<cmd>::Git push -u origin HEAD<CR>", "Push All Changes" },
 
     },
 }
