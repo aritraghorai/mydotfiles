@@ -51,7 +51,6 @@ return require('packer').startup(function(use)
     }
   }
 
-  use 'norcalli/nvim-colorizer.lua'
 
   use { 'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons' }
 
@@ -85,6 +84,10 @@ return require('packer').startup(function(use)
 
   --AUto tag Html
   use("windwp/nvim-ts-autotag")
+
+  use("github/copilot.vim")
+
+  use 'NvChad/nvim-colorizer.lua'
 
 
   if packer_bootstrap then

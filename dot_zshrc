@@ -36,17 +36,10 @@ eval "$(starship init zsh)"
 
 
 
-eval "$(rbenv init - zsh)"
-
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
-
-export ANDROID_HOME=/Users/aritra/Library/Android/sdk
-export ANDROID_SDK_ROOT=/Users/aritra/Library/Android/sdk
-export PATH="/opt/homebrew/opt/gradle@6/bin:$PATH"
 
 
-# Load Angular CLI autocompletion.
-source <(ng completion script)
+
+
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

@@ -44,6 +44,7 @@ lsp.on_attach(function(client, bufnr)
 
     nmap("<leader>rn", vim.lsp.buf.rename, "[R]e[n]ame")
     nmap("<leader>ca", vim.lsp.buf.code_action, "[C]ode [A]ction")
+    nmap("<S-Q>", vim.lsp.buf.code_action, "[C]ode [A]ction")
     nmap("<A-.>", vim.lsp.buf.code_action, "[C]ode [A]ction")
 
     nmap("gd", vim.lsp.buf.definition, "[G]oto [D]efinition")
