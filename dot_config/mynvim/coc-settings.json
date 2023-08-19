@@ -1,0 +1,20 @@
+{
+  "suggest.enablePreselect": false,
+  "java.format.enabled": true,
+  "snippets.userSnippetsDirectory": "~/.config/nvim/snippets",
+  "java.format.settings.url": "~/.config/nvim/formater/java.xml",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "java",
+    "json",
+    "javascript",
+    "typescript",
+    "py"
+  ],
+  "emmet.includeLanguages": {
+    "vue-html": "html",
+    "javascript": "javascriptreact"
+  },
+  "coc.preferences.formatOnType": true
+}

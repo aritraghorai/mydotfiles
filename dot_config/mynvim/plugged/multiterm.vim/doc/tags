@@ -1,0 +1,16 @@
+:Multiterm	multiterm.txt	/*:Multiterm*
+<Plug>(Multiterm)	multiterm.txt	/*<Plug>(Multiterm)*
+g:multiterm_opts	multiterm.txt	/*g:multiterm_opts*
+g:multiterm_opts.border_chars	multiterm.txt	/*g:multiterm_opts.border_chars*
+g:multiterm_opts.border_hl	multiterm.txt	/*g:multiterm_opts.border_hl*
+g:multiterm_opts.col	multiterm.txt	/*g:multiterm_opts.col*
+g:multiterm_opts.height	multiterm.txt	/*g:multiterm_opts.height*
+g:multiterm_opts.row	multiterm.txt	/*g:multiterm_opts.row*
+g:multiterm_opts.show_term_tag	multiterm.txt	/*g:multiterm_opts.show_term_tag*
+g:multiterm_opts.term_hl	multiterm.txt	/*g:multiterm_opts.term_hl*
+g:multiterm_opts.width	multiterm.txt	/*g:multiterm_opts.width*
+multiterm-configuration	multiterm.txt	/*multiterm-configuration*
+multiterm-contents	multiterm.txt	/*multiterm-contents*
+multiterm-introduction	multiterm.txt	/*multiterm-introduction*
+multiterm-usage	multiterm.txt	/*multiterm-usage*
+multiterm.vim	multiterm.txt	/*multiterm.vim*
