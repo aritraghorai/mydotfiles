@@ -6,18 +6,24 @@ return {
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "onedarker",
-    },
   },
-  -- {
-  --   "folke/tokyonight.nvim",
-  --   opts = {
-  --     transparent = true,
-  --     styles = {
-  --       sidebars = "transparent",
-  --       floats = "transparent",
-  --     },
-  --   },
-  -- },
+  {
+    "rose-pine/neovim",
+  },
+  {
+    "folke/tokyonight.nvim",
+    opts = {
+      colorscheme = "tokyonight",
+      style = "night",
+    },
+
+    -- opts = {
+    --   transparent = true,
+    --   styles = {
+    --     sidebars = "transparent",
+    --     floats = "transparent",
+    --   },
+    -- },
+  },
+  {},
 }
