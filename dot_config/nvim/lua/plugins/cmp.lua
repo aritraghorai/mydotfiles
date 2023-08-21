@@ -8,4 +8,7 @@ return {
       opts.sources = cmp.config.sources(vim.list_extend(opts.sources, { { name = "emoji" } }))
     end,
   },
+  {
+    "ryanoasis/vim-devicons",
+  },
 }
