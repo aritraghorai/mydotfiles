@@ -10,6 +10,7 @@ return {
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
+  { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.prisma" },
   { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   { import = "astrocommunity.project.project-nvim" },
