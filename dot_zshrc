@@ -7,7 +7,7 @@ alias bup="brew upgrade"
 alias vim="nvim"
 
 
-bindkey -s ^f "search\n"
+bindkey -s "^f" "search\n"
 
 
 source ~/antigen.zsh
