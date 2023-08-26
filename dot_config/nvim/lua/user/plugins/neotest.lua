@@ -6,6 +6,7 @@ return {
       "nvim-neotest/neotest-python",
       "rouge8/neotest-rust",
       "haydenmeade/neotest-jest",
+      "andy-bell101/neotest-java",
       {
         "folke/neodev.nvim",
         opts = function(_, opts)
