@@ -5,9 +5,9 @@ alias bic="brew install --cask"
 alias bs="brew search"
 alias bup="brew upgrade"
 alias vim="nvim"
-alias vim="nvim"
 
 
+bindkey -s ^f "search\n"
 
 
 source ~/antigen.zsh
