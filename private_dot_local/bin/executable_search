@@ -6,11 +6,15 @@ if [ -z "$session" ]; then
 	exit 0
 fi
 
-session_name=$(basename "$session" | tr " ." "__")
+# session_name=$(basename "$session" | tr " ." "__")
 
-if ! tmux has-session -t "$session_name" 2>/dev/null; then
-	tmux new-session -s "$session_name" -c "$session" -d
+session_name1=$(basename "$(dirname "$session")" | tr " ." "__")_"$(basename "$session" | tr " ." "__")"
+
+echo "$session_name1"
+
+if ! tmux has-session -t "$session_name1" 2>/dev/null; then
+	tmux new-session -s "$session_name1" -c "$session" -d
 fi
 
 # tmux switch-client -t "$session_name"
-tmux switch-client -t "$session_name" || tmux attach-session -t "$session_name"
+tmux switch-client -t "$session_name1" || tmux attach-session -t "$session_name1"
