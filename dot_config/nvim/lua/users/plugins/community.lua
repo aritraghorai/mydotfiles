@@ -1,4 +1,5 @@
 return {
+  -- Add the community repository of plugin specifications
   "AstroNvim/astrocommunity",
   -- example of importing a plugin, comment out to use it or add your own
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
@@ -18,4 +19,16 @@ return {
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine", opts = { colorscheme = "rose-pine" } },
+  {
+    "ahmedkhalf/project.nvim",
+    opts = {},
+    config = function(_, opts)
+      require("project_nvim").setup(opts)
+      require("telescope").load_extension "projects"
+    end,
+    keys = {
+      { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
+      { "<C-p>", "<Cmd>Telescope projects<CR>", desc = "Projects" },
+    },
+  },
 }

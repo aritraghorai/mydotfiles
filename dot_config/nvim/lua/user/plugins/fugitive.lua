@@ -1,7 +1,7 @@
 return {
   {
     "tpope/vim-fugitive",
-    lazy = false,
+    event = "User AstroGitFile",
     keys = {
       {
         "<leader>gf",
