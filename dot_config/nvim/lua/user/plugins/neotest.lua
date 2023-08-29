@@ -1,6 +1,7 @@
 return {
   {
     "nvim-neotest/neotest",
+    ft = { "go", "rust", "python", "javascript", "typescript", "java" },
     dependencies = {
       "nvim-neotest/neotest-go",
       "nvim-neotest/neotest-python",
@@ -20,12 +21,28 @@ return {
     },
     opts = function()
       return {
+        log_level = vim.log.levels.TRACE,
+
         -- your neotest config here
         adapters = {
           require "neotest-go",
           require "neotest-rust",
           require "neotest-python",
           require "neotest-jest",
+          require "neotest-java" {
+            -- function to determine which runner to use based on project path
+            determine_runner = function(project_root_path)
+              -- return should be "maven" or "gradle"
+              return "maven"
+            end,
+            -- override the builtin runner discovery behaviour to always use given
+            -- tool. Default is "nil", so no override
+            force_runner = nil,
+            -- if the automatic runner discovery can't uniquely determine whether
+            -- to use Gradle or Maven, fallback to using this runner. Default is
+            -- "gradle"
+            fallback_runner = "maven",
+          },
         },
       }
     end,
