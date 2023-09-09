@@ -1,7 +1,7 @@
 return {
   {
     "nvim-neotest/neotest",
-    ft = { "go", "rust", "python", "javascript", "typescript", "java" },
+    -- ft = { "go", "rust", "python", "javascript", "typescript", "java" },
     dependencies = {
       "nvim-neotest/neotest-go",
       "nvim-neotest/neotest-python",
