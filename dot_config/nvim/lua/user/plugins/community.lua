@@ -11,6 +11,7 @@ return {
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.prisma" },
+  { import = "astrocommunity.pack.full-dadbod" },
   { import = "astrocommunity.fuzzy-finder.telescope-zoxide" },
   { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.git.git-blame-nvim" },
