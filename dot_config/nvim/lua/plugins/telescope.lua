@@ -36,7 +36,7 @@ return {
   config = require "plugins.configs.telescope",
   keys = { {
     "<leader><leader>",
-    "<cmd>Telescope git_files<cr>",
-    desc = "Open All git files",
+    "<cmd>Telescope find_files<cr> ",
+    desc = "Find All Files",
   } },
 }

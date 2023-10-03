@@ -7,6 +7,22 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.java" },
+  {
+    ft = { "java" },
+    "mfussenegger/nvim-jdtls",
+    keys = {
+      {
+        "<leader>lt",
+        function() require("jdtls.tests").goto_subjects() end,
+        desc = "Go to declaration",
+      },
+      {
+        "<leader>lT",
+        function() require("jdtls.tests").generate() end,
+        desc = "Go to declaration",
+      },
+    },
+  },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.bash" },
@@ -27,6 +43,7 @@ return {
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.colorscheme.sonokai" },
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine", opts = { colorscheme = "rose-pine" } },
 }

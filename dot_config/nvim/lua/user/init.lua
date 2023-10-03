@@ -20,6 +20,7 @@ return {
   -- Set colorscheme to use
   -- colorscheme = "astrodark",
   colorscheme = "vscode",
+  -- colorscheme = "kanagawa-dragon",
   -- colorscheme = "sonokai",
   -- colorscheme = "github_dark",
 
