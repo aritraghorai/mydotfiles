@@ -18,7 +18,7 @@ return {
       },
       {
         "<leader>lT",
-        function() require("jdtls.tests").generate() end,
+        function() require("jdtls.tests").goto_subjects() end,
         desc = "Go to declaration",
       },
     },
@@ -45,5 +45,6 @@ return {
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
+  { import = "astrocommunity.test.nvim-coverage" },
   { import = "astrocommunity.colorscheme.rose-pine", opts = { colorscheme = "rose-pine" } },
 }
