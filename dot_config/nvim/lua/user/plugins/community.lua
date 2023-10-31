@@ -6,6 +6,8 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.pack.ansible" },
+  { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.java" },
   {
     ft = { "java" },
