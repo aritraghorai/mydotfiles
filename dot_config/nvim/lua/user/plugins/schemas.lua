@@ -1,5 +1,6 @@
 return {
   {
+    ft = { "json", "yaml" },
     "neovim/nvim-lspconfig",
     dependencies = {
       "b0o/SchemaStore.nvim",

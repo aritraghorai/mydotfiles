@@ -19,7 +19,7 @@ return {
   },
   cmd = { "CompilerOpen", "CompilerToggleResults" },
   keys = {
-    { "<leader>lr", "<cmd>CompilerOpen<cr>", desc = "Compiler:Show Options" },
+    -- { "<leader>R", "<cmd>CompilerOpen<cr>", desc = "Compiler:Show Options" },
     { "<leader>lo", "<cmd>CompilerToggleResults<cr>", desc = "Compiler:Show Result" },
   },
 

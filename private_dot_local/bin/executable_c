@@ -6,4 +6,4 @@ if [ -z "$session" ]; then
 	exit 0
 fi
 
-code "$session"
+code "$session" -r
