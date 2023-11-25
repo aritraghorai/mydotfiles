@@ -1,20 +1,18 @@
 return {
   "hrsh7th/nvim-cmp",
   dependencies = {
-    "jcdickinson/codeium.nvim", -- add cmp source as dependency of cmp
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-      "hrsh7th/nvim-cmp",
-      "hrsh7th/cmp-emoji", -- add cmp source as dependency of cmp
-    },
+    "jcdickinson/codeium.nvim", -- add cmp source as dependency of cmp cmp
+    "nvim-lua/plenary.nvim",
+    "MunifTanjim/nui.nvim",
+    "hrsh7th/nvim-cmp",
+    "hrsh7th/cmp-emoji", -- add cmp source as dependency of cmp
+    "sourcegraph/sg.nvim",
     opts = {},
   },
   opts = function(_, opts)
     local cmp = require "cmp"
     local luasnip = require "luasnip"
     return require("astronvim.utils").extend_tbl(opts, {
-      -- return astronvim.extend_tbl(opts, {
       window = {
         completion = cmp.config.window.bordered(),
         documentation = cmp.config.window.bordered(),
@@ -26,6 +24,7 @@ return {
         { name = "path", priority = 250 },
         { name = "codeium", priority = 900 }, -- add new source
         { name = "emoji", priority = 10004 },
+        { name = "sg", priority = 800 },
       },
       mapping = {
         -- so that tabout plugin can work

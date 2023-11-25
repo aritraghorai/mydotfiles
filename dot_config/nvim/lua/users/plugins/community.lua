@@ -19,16 +19,4 @@ return {
   { import = "astrocommunity.colorscheme.vscode-nvim" },
   { import = "astrocommunity.editing-support.refactoring-nvim" },
   { import = "astrocommunity.colorscheme.rose-pine", opts = { colorscheme = "rose-pine" } },
-  {
-    "ahmedkhalf/project.nvim",
-    opts = {},
-    config = function(_, opts)
-      require("project_nvim").setup(opts)
-      require("telescope").load_extension "projects"
-    end,
-    keys = {
-      { "<leader>fp", "<Cmd>Telescope projects<CR>", desc = "Projects" },
-      { "<C-p>", "<Cmd>Telescope projects<CR>", desc = "Projects" },
-    },
-  },
 }
