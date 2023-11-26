@@ -6,10 +6,12 @@ return {
     "MunifTanjim/nui.nvim",
     "hrsh7th/nvim-cmp",
     "hrsh7th/cmp-emoji", -- add cmp source as dependency of cmp
-    "sourcegraph/sg.nvim",
+    "zbirenbaum/copilot-cmp",
     opts = {},
   },
   opts = function(_, opts)
+    require("copilot_cmp").setup()
+    require("codeium").setup {}
     local cmp = require "cmp"
     local luasnip = require "luasnip"
     return require("astronvim.utils").extend_tbl(opts, {
@@ -24,7 +26,7 @@ return {
         { name = "path", priority = 250 },
         { name = "codeium", priority = 900 }, -- add new source
         { name = "emoji", priority = 10004 },
-        { name = "sg", priority = 800 },
+        { name = "copilot", priority = 905 },
       },
       mapping = {
         -- so that tabout plugin can work
