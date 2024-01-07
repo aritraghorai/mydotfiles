@@ -53,4 +53,5 @@ return {
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.test.nvim-coverage" },
   { import = "astrocommunity.colorscheme.rose-pine", opts = { colorscheme = "rose-pine" } },
+  { import = "astrocommunity.colorscheme.catppuccin"}
 }
