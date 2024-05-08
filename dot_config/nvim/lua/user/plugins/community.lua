@@ -4,30 +4,12 @@ return {
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   -- { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.programming-language-support.rest-nvim" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
-  { import = "astrocommunity.pack.ansible" },
   { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   { import = "astrocommunity.pack.java" },
-  {
-    ft = { "java" },
-    "mfussenegger/nvim-jdtls",
-    keys = {
-      {
-        "<leader>lt",
-        function() require("jdtls.tests").goto_subjects() end,
-        desc = "Go to declaration",
-      },
-      {
-        "<leader>lT",
-        function() require("jdtls.tests").goto_subjects() end,
-        desc = "Go to declaration",
-      },
-    },
-  },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.bash" },
@@ -36,7 +18,6 @@ return {
   { import = "astrocommunity.pack.tailwindcss" },
   { import = "astrocommunity.lsp.lsp-signature-nvim" },
   { import = "astrocommunity.lsp.garbage-day-nvim" },
-  { import = "astrocommunity.lsp.lsp-inlayhints-nvim" },
   { import = "astrocommunity.debugging.nvim-dap-repl-highlights" },
   { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
   { import = "astrocommunity.debugging.persistent-breakpoints-nvim" },
@@ -52,6 +33,5 @@ return {
   { import = "astrocommunity.colorscheme.github-nvim-theme" },
   { import = "astrocommunity.colorscheme.kanagawa-nvim" },
   { import = "astrocommunity.test.nvim-coverage" },
-  { import = "astrocommunity.colorscheme.rose-pine", opts = { colorscheme = "rose-pine" } },
-  { import = "astrocommunity.colorscheme.catppuccin"}
+  { import = "astrocommunity.color.transparent-nvim"},
 }
